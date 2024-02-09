@@ -1,10 +1,17 @@
 .content-client {
-    width: 100%;
-    height: 100vh;
-    background-color: #e1e7f3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      #952968 0%,
+      #ec3068 15.1%,
+      #eca178 55.21%,
+      #ec3068 80.21%,
+      #952968 100%
+    );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -24,4 +31,3 @@
     background-color: #007bff; /* Color azul de Bootstrap */
     color: white; /* Color del texto */
   }
-  
