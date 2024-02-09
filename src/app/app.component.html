@@ -1,0 +1,36 @@
+<article class="content-client">
+  <section class="client">
+    <h1 class="title">Clientes</h1>
+
+    <select (change)="filtrarEndpoint($event)">
+      <option value="todos">Todos los clientes</option>
+      <option value="librosVencidos">Clientes con libros vencidos</option>
+    </select>
+
+    <table class="table table-striped">
+      <thead class="custom-thead">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Celular</th>
+          <th>Actualizado en</th>
+          <th>Creado en</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cliente of clientes">
+          <td>{{ cliente.id }}</td>
+          <td>{{ cliente.name }}</td>
+          <td>{{ cliente.email }}</td>
+          <td>{{ cliente.celular }}</td>
+          <td>{{ cliente.updated_at | date : "medium" }}</td>
+          <td>{{ cliente.created_at | date : "medium" }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    
+  </section>
+</article>
